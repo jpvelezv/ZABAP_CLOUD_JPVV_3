@@ -4,12 +4,12 @@
 @Metadata.allowExtensions: true
 define root view entity Z_C_TRAVEL_JPVV
   provider contract transactional_query
-  as projection on z_i_travel_JPVV
+  as projection on z_i_travel_jpvv
 {
   key TravelUUID,
       TravelID,
-      @Consumption.valueHelpDefinition: [{ entity : { name : '/DMO/I_Agency_StdVH',
-                                                      element: 'AgencyID' },
+      @Consumption.valueHelpDefinition: [{ entity : { name      : '/DMO/I_Agency_StdVH',
+                                                      element   : 'AgencyID' },
                                            useForValidation: true }]
       AgencyID,
       CustomerID,
@@ -19,8 +19,8 @@ define root view entity Z_C_TRAVEL_JPVV
       BookingFee,
       @Semantics.amount.currencyCode: 'CurrencyCode'
       TotalPrice,
-      @Consumption.valueHelpDefinition: [{ entity : { name : 'I_CurrencyStdVH',
-                                                      element: 'Currency' },
+      @Consumption.valueHelpDefinition: [{ entity : { name      : 'I_CurrencyStdVH',
+                                                      element   : 'Currency' },
                                            useForValidation: true }]
       CurrencyCode,
       Description,

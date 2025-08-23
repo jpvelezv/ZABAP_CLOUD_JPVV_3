@@ -4,6 +4,8 @@
   <asx:values>
    <DEVC>
     <CTEXT>ZABAP_CLOUD_JPVV_3</CTEXT>
+    <LANGUAGE>E</LANGUAGE>
+    <MASTERLANG>E</MASTERLANG>
    </DEVC>
   </asx:values>
  </asx:abap>
